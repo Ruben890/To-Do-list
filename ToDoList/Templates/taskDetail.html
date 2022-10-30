@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link de bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- link de Fontawesome -->
+    <script src="https://kit.fontawesome.com/80afc1ebb2.js" crossorigin="anonymous"></script>
+    <title>{{ Task.title }}</title>
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <h2>{{ Task.title }}</h2>
+        <hr>
+        <p>{{Task.created}}</p>
+        <p>{{Task.description }}</p>
+        {% if Task.complete == True %}
+        <h3 style="color:#05E374 ;">complete</h3>
+        {% else %}
+        <h3 style="color:#f55a41;">incomplete</h3>
+        {% endif %}
+        <hr>
+        <a href="{% url 'Home' %}" class="btn btn-danger">Go back</a>
+      </section>
+      
+    </main>
+    <!-- link de JS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  </body>
+</html>
+<style>
+  body{
+    background-color: #38a17e;
+  }
+  
+  main > section {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 18px;
+    margin-top: 5rem;
+    text-align: justify;
+  }
+</style>

@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link de bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- link de Fontawesome -->
+    <script src="https://kit.fontawesome.com/80afc1ebb2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'CSS/Register.css' %}">
+    <title>Register</title>
+  </head>
+  <body>
+    <main class="container">
+
+      <section style="margin-top: 5rem;">
+      <form action="" method="post" class="form-group">
+        <fieldset class="form-group">
+          <legend class="form-legend">Register</legend>
+          <hr>
+        </fieldset>
+
+        <div class="row">
+          <div class="col12">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p>
+              show password<input type="checkbox" onclick="showPassword(), showPassword2() " />
+            </p>
+            
+            <div class="btn1">
+            <a href="login" class="login">log in</a>
+            <button type="submit">Register</button>
+          </div>
+            
+          </div>
+        </div>
+      </form>
+    
+    </section>
+    </main>
+    <!-- link de JS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  </body>
+
+  <script>
+    const input = document.getElementById('id_password1')
+    const showPassword = () => {
+      if (input.type == 'password') {
+        input.type = 'text'
+      } else {
+        input.type = 'password'
+      }
+    }
+    
+    const input2 = document.getElementById('id_password2')
+    const showPassword2 = () => {
+      if (input2.type == 'password') {
+        input2.type = 'text'
+      } else {
+        input2.type = 'password'
+      }
+    }
+  </script>
+</html>

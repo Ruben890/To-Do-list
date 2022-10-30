@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+
+body {
+  background-color: #38a17e;
+}
+main section {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+section form {
+  border-radius: 15px;
+  background-color: #46c79d;
+  padding: 2rem;
+  box-shadow: 15px 12px 15px #22614c;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+legend {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+form input {
+  margin-top: 1rem;
+  outline: none;
+  width: 25rem;
+  display: block;
+  margin-bottom: 2rem;
+  padding: 8px;
+  border: none;
+}
+
+.show_password {
+  background-color: #22614c;
+  padding: 8px;
+  width: 15rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+.show_password:active {
+  background-color: #53edba;
+  color: white;
+}
+
+.login {
+  margin-top: 2rem;
+  position: relative;
+  left: 10rem;
+  background: none;
+  border: 1px solid;
+  padding: 18px;
+  border-radius: 5px;
+}
+
+.login:hover {
+  background-color: #22614c;
+}
+
+ul li {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  right: 2rem;
+  padding: 12px;
+  list-style: none;
+  color: #f55a41;
+  width: 25rem;
+  text-align: justify;
+}

@@ -1,0 +1,91 @@
+nav {
+  background-color: #38a17e;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+nav > ul {
+  display: flex;
+  margin-top: 1rem;
+  margin-top: 1rem;
+  width: 15rem;
+  list-style: none;
+}
+
+nav ul > li {
+  margin-right: 1rem;
+  font-size: 25px;
+  display: flex;
+}
+
+nav ul li > a {
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+nav ul li > a:hover {
+  color: black;
+}
+
+nav > form {
+  margin: 1rem;
+}
+
+nav form > a {
+  text-decoration: none;
+  margin-left: 1rem;
+  padding: 12px;
+}
+
+nav form a > img {
+  width: 40px;
+}
+
+nav form > input {
+  border-radius: 15px;
+  padding: 7px;
+  outline: none;
+  border: none;
+}
+
+nav form > button {
+  border-radius: 15px;
+  padding: 7px;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+main > section {
+  border-radius: 15px;
+  padding: 18px;
+  margin-top: 5rem;
+  border: 1.5px solid #22614c;
+}
+section img{
+  width: 32px;
+  margin: 1rem;
+}
+
+section div > a {
+  color: black;
+  text-decoration: none;
+  padding: 12px;
+  border: 1px solid #22614c;
+  clip-path: circle(10% at all right);
+  transition-property: clip-path;
+}
+section div > a:hover {
+  transition: all 0.8s;
+  clip-path: circle(150% at top right);
+  background-color: #46c79d;
+  color: white;
+}
+
+section div {
+  position: relative;
+  bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+

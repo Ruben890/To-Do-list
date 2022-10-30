@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+
+body {
+  background-color: #38a17e;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+}
+
+section form {
+  border-radius: 15px;
+  background-color: #46c79d;
+  padding: 2rem;
+  box-shadow: 15px 12px 15px #22614c;
+}
+
+main section {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+section form {
+  border-radius: 15px;
+  background-color: #46c79d;
+  padding: 2rem;
+  box-shadow: 15px 12px 15px #22614c;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+ul {
+  font-weight: bold;
+  list-style: none;
+}
+legend {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+form input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  background: none;
+  border: 1px solid;
+  padding: 18px;
+  border-radius: 5px;
+}
+
+.btn1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button:hover {
+  background-color: #22614c;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  margin-top: 2rem;
+  background: none;
+  border: 1px solid;
+  padding: 18px;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: black;
+  background-color: #22614c;
+}

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+
+body{
+    background-color: #38A17E;
+}
+main section {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+section form {
+  width: 25rem;
+  border-radius: 15px;
+  background-color: #46c79d;
+  box-shadow: 15px 12px 15px #22614c;
+  padding: 18px;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+legend {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+form input {
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+textarea{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.btn1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
