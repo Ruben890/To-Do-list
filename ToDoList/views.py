@@ -83,7 +83,7 @@ class register(FormView):
             login(self.request, user)
         return super(register, self).form_valid(form)
 
-    # def get(self, *args, **kwargs):
-    #     if self.request.user.is_authenticated:
-    #         return redirect('Home')
-    #     return super(register, self).get(*args, **kwargs)
+    def get(self, *args, **kwargs):
+         if self.request.user.is_authenticated:
+            return redirect('homepage')
+         return super(Register, self).get(*args, **kwargs)
